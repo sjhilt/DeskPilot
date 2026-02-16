@@ -1,6 +1,6 @@
-# 3D Printer Buddy Check Box ✈️➡️🖨️
+# 3D Printer Buddy Check Box
 
-A physical toggle-switch checklist box with LED indicators — inspired by aviation pre-flight "Buddy Check" checklists, adapted for daily office/maker workflows.
+A physical toggle-switch checklist box with LED indicators -- inspired by aviation pre-flight "Buddy Check" checklists, adapted for daily office/maker workflows.
 
 **No microcontroller needed!** Pure simple wiring: each toggle switch directly controls an LED through a resistor. Plug in USB-C for power, flip toggles, LEDs light up. That's it.
 
@@ -10,24 +10,24 @@ A physical toggle-switch checklist box with LED indicators — inspired by aviat
 
 | Version | Dimensions | Toggles | Labels | Min Build Plate |
 |---------|-----------|---------|--------|----------------|
-| **V1** | 171.5 × 76.2 × 38.1mm | 8 | Cut-through text | 200mm+ |
-| **V2** | 171.5 × 76.2 × 38.1mm | 8 | Stick-in label slots | 200mm+ |
-| **V3** ⭐ | 145 × 70 × 35mm | 6 | Stick-in label slots | **150mm** (Adventurer 3) |
+| **V1** | 171.5 x 76.2 x 38.1mm | 8 | Cut-through text | 200mm+ |
+| **V2** | 171.5 x 76.2 x 38.1mm | 8 | Stick-in label slots | 200mm+ |
+| **V3** (Recommended) | 145 x 70 x 35mm | 6 | Stick-in label slots | **150mm** (Adventurer 3) |
 
 ## Features
 
-- 🔧 **Simple wiring** — no code, no microcontroller, no programming
-- ⚡ **USB-C powered** — any phone charger works (draws only 160mA)
-- 🏷️ **Swappable labels** (V2/V3) — recessed slots for stick-in paper labels
-- 💡 **LED indicators** — green LEDs on top lid, one per toggle
-- 🔌 **Optional USB hub** — add USB-A ports for charging devices
-- 🖨️ **3D printable** — OpenSCAD source files included
+- **Simple wiring** -- no code, no microcontroller, no programming
+- **USB-C powered** -- any phone charger works (draws only 160mA)
+- **Swappable labels** (V2/V3) -- recessed slots for stick-in paper labels
+- **LED indicators** -- green LEDs on top lid, one per toggle
+- **Optional USB hub** -- add USB-A ports for charging devices
+- **3D printable** -- OpenSCAD source files included
 
 ## Quick Start
 
 1. **Print** the bottom + lid STL files for your version
 2. **Buy** components from the [BOM](BOM_Office_Checklist_Box.md) (~$51-83)
-3. **Wire** toggles → resistors → LEDs (see wiring diagram in BOM)
+3. **Wire** toggles -> resistors -> LEDs (see wiring diagram in BOM)
 4. **Print labels** using `label_template.html` and stick them in
 
 ## Files
@@ -53,16 +53,16 @@ A physical toggle-switch checklist box with LED indicators — inspired by aviat
 ## Wiring
 
 ```
-USB-C ──► Breakout Board
-              │
-              ├── 5V ──┬── Toggle 1 ── 150Ω ── LED 1 ──┐
-              │        ├── Toggle 2 ── 150Ω ── LED 2 ──┤
-              │        ├── Toggle 3 ── 150Ω ── LED 3 ──┤
-              │        ├── Toggle 4 ── 150Ω ── LED 4 ──┤
-              │        ├── Toggle 5 ── 150Ω ── LED 5 ──┤
-              │        └── Toggle 6 ── 150Ω ── LED 6 ──┤
-              │                                         │
-              └── GND ──────────────────────────────────┘
+USB-C --> Breakout Board
+              |
+              +-- 5V --+-- Toggle 1 -- 150R -- LED 1 --+
+              |        +-- Toggle 2 -- 150R -- LED 2 --+
+              |        +-- Toggle 3 -- 150R -- LED 3 --+
+              |        +-- Toggle 4 -- 150R -- LED 4 --+
+              |        +-- Toggle 5 -- 150R -- LED 5 --+
+              |        +-- Toggle 6 -- 150R -- LED 6 --+
+              |                                         |
+              +-- GND ----------------------------------+
 ```
 
 ## Print Settings
@@ -83,8 +83,8 @@ USB-C ──► Breakout Board
 
 ## Inspiration
 
-Inspired by the [Missionary Bush Pilot BuddyCheck](https://www.missionarybushpilot.com/buddycheck) — a physical pre-flight checklist used in aviation.
+Inspired by the [Missionary Bush Pilot BuddyCheck](https://www.missionarybushpilot.com/buddycheck) -- a physical pre-flight checklist used in aviation.
 
 ## License
 
-MIT — feel free to remix, modify, and share!
+MIT -- feel free to remix, modify, and share!

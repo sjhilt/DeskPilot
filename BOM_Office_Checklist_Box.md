@@ -3,45 +3,45 @@
 ## Project Overview
 A toggle-switch checklist box with LED status indicators for office/desk use.  
 Inspired by the aviation "Buddy Check" concept, adapted for daily office task checklists.  
-**No microcontroller needed** — pure simple wiring (toggle → resistor → LED). USB-C for power only.
+**No microcontroller needed** -- pure simple wiring (toggle > resistor > LED). USB-C for power only.
 
 **Three Versions Available:**
 
 | Version | Dimensions | Toggles | Labels | Fits Printer |
 |---------|-----------|---------|--------|-------------|
-| **V1** | 171.5 × 76.2 × 38.1mm (6.75" × 3" × 1.5") | 8 | Cut-through text | 200mm+ bed |
-| **V2** | 171.5 × 76.2 × 38.1mm (6.75" × 3" × 1.5") | 8 | Indent slots (stick-in) | 200mm+ bed |
-| **V3 ⭐** | 145 × 70 × 35mm (5.7" × 2.75" × 1.4") | 6 | Indent slots (stick-in) | **FlashForge Adventurer 3** (150mm) |
+| **V1** | 171.5 x 76.2 x 38.1mm (6.75" x 3" x 1.5") | 8 | Cut-through text | 200mm+ bed |
+| **V2** | 171.5 x 76.2 x 38.1mm (6.75" x 3" x 1.5") | 8 | Indent slots (stick-in) | 200mm+ bed |
+| **V3 ** | 145 x 70 x 35mm (5.7" x 2.75" x 1.4") | 6 | Indent slots (stick-in) | **FlashForge Adventurer 3** (150mm) |
 
 **Layout (all versions):**
-- **FRONT FACE** — 6 or 8 toggle switches + labels
-- **TOP (lid)** — LED indicator holes near front edge
-- **BACK** — USB-C power input (5V only)
-- **RIGHT SIDE** — 2x USB-A output ports *(optional — only if adding USB hub)*
-- **BOTTOM** — Ventilation slots
+- **FRONT FACE** -- 6 or 8 toggle switches + labels
+- **TOP (lid)** -- LED indicator holes near front edge
+- **BACK** -- USB-C power input (5V only)
+- **RIGHT SIDE** -- 2x USB-A output ports *(optional -- only if adding USB hub)*
+- **BOTTOM** -- Ventilation slots
 
 ---
 
 ## 3D Printed Parts
 
-### V1 — Cut-Through Text Version
+### V1 -- Cut-Through Text Version
 | # | Part | File | Material | Notes |
 |---|------|------|----------|-------|
 | 1 | Bottom (toggles + engraved text on front) | `buddy_check_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
 | 2 | Lid (LED holes on top) | `buddy_check_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
 | 3 | Lid (flipped for printing) | `buddy_check_lid_print_orientation.stl` | PLA/PETG | Same lid, print-ready |
 
-### V2 — Label Indent Slot Version ⭐ Recommended
+### V2 -- Label Indent Slot Version (Recommended)
 | # | Part | File | Material | Notes |
 |---|------|------|----------|-------|
-| 1 | Bottom (toggles + 18×8mm label recesses) | `buddy_check_v2_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
+| 1 | Bottom (toggles + 18x8mm label recesses) | `buddy_check_v2_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
 | 2 | Lid (LED holes on top) | `buddy_check_v2_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
 | 3 | Printable Label Template | `label_template.html` | Paper/Sticker | Open in browser, edit, print |
 
-### V3 — Compact / FlashForge Adventurer 3 ⭐ (6 toggles, 145×70×35mm)
+### V3 -- Compact / FlashForge Adventurer 3 (6 toggles, 145x70x35mm)
 | # | Part | File | Material | Notes |
 |---|------|------|----------|-------|
-| 1 | Bottom (6 toggles + 18×8mm label recesses) | `buddy_check_v3_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
+| 1 | Bottom (6 toggles + 18x8mm label recesses) | `buddy_check_v3_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
 | 2 | Lid (6 LED holes on top) | `buddy_check_v3_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
 | 3 | Printable Label Template | `label_template.html` | Paper/Sticker | Use 6 of 8 labels |
 
@@ -80,7 +80,7 @@ Inspired by the aviation "Buddy Check" concept, adapted for daily office task ch
 |---|-----------|-----|-------|------------|--------|
 | 3 | 3mm Green LEDs | 6 or 8 | 3mm, 20mA, 2.0-2.2V forward voltage | $3-5 (pack of 50) | Amazon / AliExpress |
 | 4 | LED Holders/Bezels (3mm) | 6 or 8 | Chrome or black plastic clip-in holders | $3-5 (pack of 20) | Amazon |
-| 5 | Resistors (150Ω) | 6 or 8 | 1/4W, for 5V supply with green LEDs | $2-3 (assorted pack) | Amazon |
+| 5 | Resistors (150ohm) | 6 or 8 | 1/4W, for 5V supply with green LEDs | $2-3 (assorted pack) | Amazon |
 
 **LED Color Options:** Green (task complete), Red (urgent), Blue (info), or RGB for customization
 
@@ -88,14 +88,14 @@ Inspired by the aviation "Buddy Check" concept, adapted for daily office task ch
 
 ## Power Input (USB-C for 5V)
 
-> **No microcontroller needed!** This is pure simple wiring — each toggle switch directly controls its LED through a resistor. USB-C is only used for 5V power.
+> **No microcontroller needed!** This is pure simple wiring -- each toggle switch directly controls its LED through a resistor. USB-C is only used for 5V power.
 
 | # | Component | Qty | Specs | Est. Price | Source |
 |---|-----------|-----|-------|------------|--------|
 | 6 | USB-C Breakout Board | 1 | Exposes 5V and GND pads, panel-mountable | $3-5 (pack of 5) | Amazon / AliExpress |
 | 7 | USB-C Panel Mount Connector | 1 | Female, for power input on back panel | $3-5 | Amazon |
 
-**How it works:** Plug any USB-C cable into the back → breakout board provides 5V & GND → toggles switch power to LEDs. No code, no programming, no controller. Just solder and go!
+**How it works:** Plug any USB-C cable into the back > breakout board provides 5V & GND > toggles switch power to LEDs. No code, no programming, no controller. Just solder and go!
 
 **Alternative power options:**
 - USB-C phone charger (5V 1A is more than enough for 8 LEDs)
@@ -110,7 +110,7 @@ Inspired by the aviation "Buddy Check" concept, adapted for daily office task ch
 | 6a | USB 2.0/3.0 Hub PCB Module | 1 | 4-port USB-A, USB-C input, compact PCB | $5-10 | Amazon / AliExpress |
 | 6b | USB-A Panel Mount Connectors | 2 | Female, for side-mounted output ports | $4-6 (pair) | Amazon |
 
-*The USB hub replaces the breakout board — it provides both 5V power for the LEDs AND USB-A output ports. Look for a FE1.1s-based 4-port USB 2.0 hub board (~30mm x 20mm).*
+*The USB hub replaces the breakout board -- it provides both 5V power for the LEDs AND USB-A output ports. Look for a FE1.1s-based 4-port USB 2.0 hub board (~30mm x 20mm).*
 
 ---
 
@@ -139,14 +139,14 @@ Inspired by the aviation "Buddy Check" concept, adapted for daily office task ch
 |---|-----------|-----|-------|------------|--------|
 | 16a | Sticker Paper (full sheet) | 1 sheet | Matte white, inkjet/laser compatible | $5-8 (pack of 25) | Amazon / Office supply |
 | 16b | Clear Packing Tape (optional) | 1 roll | To laminate labels for durability | $3-5 | Amazon |
-| 16c | Precision Craft Knife / Scissors | 1 | For cutting 18mm × 8mm labels | Already have | — |
+| 16c | Precision Craft Knife / Scissors | 1 | For cutting 18mm x 8mm labels | Already have | -- |
 
 **V2 Label Instructions:**
 1. Open `label_template.html` in your browser
 2. Click each label to edit the text to your checklist items
 3. Print on sticker/adhesive paper at 100% scale (no scaling!)
-4. Cut out each 18mm × 8mm label along the borders
-5. Press labels into the recessed slots on the front face — they sit flush!
+4. Cut out each 18mm x 8mm label along the borders
+5. Press labels into the recessed slots on the front face -- they sit flush!
 6. Optional: cover with a strip of clear tape for water/smudge resistance
 
 ---
@@ -180,33 +180,33 @@ Inspired by the aviation "Buddy Check" concept, adapted for daily office task ch
 
 ## Wiring Diagram
 
-### Basic Build (Power Only — No Controller Needed!)
+### Basic Build (Power Only -- No Controller Needed!)
 ```
-USB-C Cable ──► USB-C Breakout Board (back panel)
+USB-C Cable ──> USB-C Breakout Board (back panel)
                     │
-                    ├── 5V ──┬── Toggle 1 ── 150Ω ── LED 1 ──┐
-                    │        ├── Toggle 2 ── 150Ω ── LED 2 ──┤
-                    │        ├── Toggle 3 ── 150Ω ── LED 3 ──┤
-                    │        ├── Toggle 4 ── 150Ω ── LED 4 ──┤
-                    │        ├── Toggle 5 ── 150Ω ── LED 5 ──┤
-                    │        ├── Toggle 6 ── 150Ω ── LED 6 ──┤
-                    │        ├── Toggle 7 ── 150Ω ── LED 7 ──┤
-                    │        └── Toggle 8 ── 150Ω ── LED 8 ──┤
+                    ├── 5V ──┬── Toggle 1 ── 150ohm ── LED 1 ──┐
+                    │        ├── Toggle 2 ── 150ohm ── LED 2 ──┤
+                    │        ├── Toggle 3 ── 150ohm ── LED 3 ──┤
+                    │        ├── Toggle 4 ── 150ohm ── LED 4 ──┤
+                    │        ├── Toggle 5 ── 150ohm ── LED 5 ──┤
+                    │        ├── Toggle 6 ── 150ohm ── LED 6 ──┤
+                    │        ├── Toggle 7 ── 150ohm ── LED 7 ──┤
+                    │        └── Toggle 8 ── 150ohm ── LED 8 ──┤
                     │                                         │
                     └── GND ──────────────────────────────────┘
 ```
 
 **That's it!** Each toggle switch directly controls its LED. Flip ON = LED lights up green. No code, no microcontroller, no programming. Pure electrical circuit.
 
-**Power draw:** 8 LEDs × 20mA = 160mA total (any USB charger can handle this easily)
+**Power draw:** 8 LEDs x 20mA = 160mA total (any USB charger can handle this easily)
 
 ### Optional: With USB Hub
 ```
-USB-C Cable ──► USB Hub PCB Module ──► USB-A Port 1 (right side)
-                    │                ──► USB-A Port 2 (right side)
+USB-C Cable ──> USB Hub PCB Module ──> USB-A Port 1 (right side)
+                    │                ──> USB-A Port 2 (right side)
                     │
-                    ├── 5V (from hub's internal 5V) ──► Toggle/LED circuit (same as above)
-                    └── GND ──► Common ground
+                    ├── 5V (from hub's internal 5V) ──> Toggle/LED circuit (same as above)
+                    └── GND ──> Common ground
 ```
 
 ---
@@ -237,14 +237,14 @@ USB-C Cable ──► USB Hub PCB Module ──► USB-A Port 1 (right side)
 
 ## Suggested Office Checklist Labels (Example)
 
-1. ✉️ Check Email
-2. 📋 Review Calendar
-3. 🔒 Update Security Logs
-4. 📊 Check Dashboards
-5. 💾 Backup Files
-6. 📝 Update Task Board
-7. 🔄 Sync Reports
-8. 🏠 End-of-Day Shutdown
+1. Check Email
+2. Review Calendar
+3. Update Security Logs
+4. Check Dashboards
+5. Backup Files
+6. Update Task Board
+7. Sync Reports
+8. End-of-Day Shutdown
 
 *Customize labels to match your daily workflow!*
 
@@ -258,25 +258,25 @@ Print `buddy_check_bottom.stl` + `buddy_check_lid_print_orientation.stl`
 ### For V2 (label indent slots, 8 toggles):
 Print `buddy_check_v2_bottom.stl` + `buddy_check_v2_lid.stl`
 
-### For V3 (compact, 6 toggles, Adventurer 3) ⭐:
+### For V3 (compact, 6 toggles, Adventurer 3) :
 Print `buddy_check_v3_bottom.stl` + `buddy_check_v3_lid.stl`
 
 ### Steps (all versions):
 1. **Print** bottom box and lid (see files above for your version)
-2. **Clean up** the toggle switch holes (6.2mm) on the FRONT FACE — use a 6mm drill bit if needed
+2. **Clean up** the toggle switch holes (6.2mm) on the FRONT FACE -- use a 6mm drill bit if needed
 3. **Clean up** the USB-C cutout on the back wall (and USB-A cutouts on right side if using hub)
 4. **Install** M3 heat-set inserts into the 4 corner screw posts (use soldering iron)
-5. **Mount** the toggle switches into the FRONT FACE holes (6 for V3, 8 for V1/V2 — they thread in with included nuts)
+5. **Mount** the toggle switches into the FRONT FACE holes (6 for V3, 8 for V1/V2 -- they thread in with included nuts)
 6. **Mount** LED holders into the LED holes on the TOP LID (near the front edge)
-7. **Wire** each toggle switch (on front) to its corresponding LED (on lid) with a 150Ω resistor in series
+7. **Wire** each toggle switch (on front) to its corresponding LED (on lid) with a 150ohm resistor in series
 8. **Connect** all LEDs to common ground, all toggles to 5V from USB-C breakout board
 9. **Mount** USB-C breakout board near back panel cutout (or USB hub if using that option)
 10. **Test** all connections with multimeter before closing
 11. **Place** lid onto box and secure with 4x M3 screws through countersunk holes
 12. **Attach** rubber feet to bottom
 13. **Labels:**
-    - **V1:** Text is already cut through the front wall — no labels needed!
-    - **V2:** Print labels using `label_template.html`, cut to 18mm × 8mm, press into front face recesses
+    - **V1:** Text is already cut through the front wall -- no labels needed!
+    - **V2:** Print labels using `label_template.html`, cut to 18mm x 8mm, press into front face recesses
 
 ---
 

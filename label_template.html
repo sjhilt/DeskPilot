@@ -101,9 +101,9 @@
 <body>
 
 <div class="no-print">
-  <h1>🏷️ Buddy Check Box - Label Template</h1>
+  <h1>Buddy Check Box - Label Template</h1>
   <p class="info">
-    Each label is exactly <strong>18mm × 8mm</strong> to fit the recessed slots on the front face.<br>
+    Each label is exactly <strong>18mm x 8mm</strong> to fit the recessed slots on the front face.<br>
     <strong>Click any label to edit the text.</strong> Then print on sticker paper, cut along borders, and press into the slots.
   </p>
   
@@ -113,7 +113,7 @@
       <option value="8">8 toggles (V1 / V2)</option>
       <option value="6">6 toggles (V3 Compact)</option>
     </select>
-    <span class="version-note" id="versionNote">V1/V2: 171.5mm × 76.2mm box</span>
+    <span class="version-note" id="versionNote">V1/V2: 171.5mm x 76.2mm box</span>
   </div>
 </div>
 
@@ -129,7 +129,7 @@
   <div class="label" contenteditable="true" data-index="7">TASKS</div>
   <div class="label" contenteditable="true" data-index="8">READY</div>
 </div>
-<div class="cut-guide">✂️ Cut along borders</div>
+<div class="cut-guide">-- Cut along borders</div>
 
 <!-- SET 2: 3D Printer Specific -->
 <div class="set-title">Set 2 — 3D Print Checklist</div>
@@ -143,7 +143,7 @@
   <div class="label" contenteditable="true" data-index="7">ADHESION</div>
   <div class="label" contenteditable="true" data-index="8">PRINT!</div>
 </div>
-<div class="cut-guide">✂️ Cut along borders</div>
+<div class="cut-guide">-- Cut along borders</div>
 
 <!-- SET 3: Custom -->
 <div class="set-title">Set 3 — Custom (click to edit)</div>
@@ -157,7 +157,7 @@
   <div class="label" contenteditable="true" data-index="7">ITEM 7</div>
   <div class="label" contenteditable="true" data-index="8">ITEM 8</div>
 </div>
-<div class="cut-guide">✂️ Cut along borders</div>
+<div class="cut-guide">-- Cut along borders</div>
 
 <!-- SET 4: Custom -->
 <div class="set-title">Set 4 — Custom (click to edit)</div>
@@ -171,7 +171,7 @@
   <div class="label" contenteditable="true" data-index="7">ITEM 7</div>
   <div class="label" contenteditable="true" data-index="8">ITEM 8</div>
 </div>
-<div class="cut-guide">✂️ Cut along borders</div>
+<div class="cut-guide">-- Cut along borders</div>
 
 <script>
 function updateToggleCount() {
@@ -179,9 +179,9 @@ function updateToggleCount() {
   const note = document.getElementById('versionNote');
   
   if (count === 6) {
-    note.textContent = 'V3 Compact: 145mm × 70mm box (FlashForge Adventurer 3)';
+    note.textContent = 'V3 Compact: 145mm x 70mm box (FlashForge Adventurer 3)';
   } else {
-    note.textContent = 'V1/V2: 171.5mm × 76.2mm box';
+    note.textContent = 'V1/V2: 171.5mm x 76.2mm box';
   }
   
   // Show/hide labels 7 and 8 in all sets
