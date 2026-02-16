@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buddy Check Box - Printable Labels</title>
+<style>
+  @page { margin: 10mm; }
+  body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    margin: 10mm;
+  }
+  h1 { font-size: 18px; margin-bottom: 5px; }
+  p.info { font-size: 11px; color: #666; margin-bottom: 15px; line-height: 1.6; }
+  
+  .controls {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .controls label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+  }
+  .controls select {
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #999;
+  }
+  .version-note {
+    font-size: 11px;
+    color: #888;
+  }
+
+  .label-row {
+    display: flex;
+    gap: 2mm;
+    margin-bottom: 8mm;
+    flex-wrap: wrap;
+  }
+  
+  .label {
+    width: 18mm;
+    height: 8mm;
+    border: 0.3mm solid #999;
+    border-radius: 1mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background: white;
+  }
+  
+  .label.hidden {
+    display: none;
+  }
+  
+  .set-title {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10mm 0 3mm 0;
+    color: #333;
+    border-top: 1px solid #ccc;
+    padding-top: 5mm;
+  }
+  
+  .set-title:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .cut-guide {
+    font-size: 9px;
+    color: #999;
+    margin-top: 2mm;
+  }
+
+  .label[contenteditable] {
+    cursor: text;
+    outline: none;
+  }
+  .label[contenteditable]:focus {
+    border-color: #2196F3;
+    box-shadow: 0 0 3px rgba(33,150,243,0.5);
+  }
+
+  @media print {
+    .no-print { display: none; }
+    body { margin: 5mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <h1>🏷️ Buddy Check Box - Label Template</h1>
+  <p class="info">
+    Each label is exactly <strong>18mm × 8mm</strong> to fit the recessed slots on the front face.<br>
+    <strong>Click any label to edit the text.</strong> Then print on sticker paper, cut along borders, and press into the slots.
+  </p>
+  
+  <div class="controls">
+    <label for="toggleCount">Number of toggles:</label>
+    <select id="toggleCount" onchange="updateToggleCount()">
+      <option value="8">8 toggles (V1 / V2)</option>
+      <option value="6">6 toggles (V3 Compact)</option>
+    </select>
+    <span class="version-note" id="versionNote">V1/V2: 171.5mm × 76.2mm box</span>
+  </div>
+</div>
+
+<!-- SET 1: Default Office Checklist -->
+<div class="set-title">Set 1 — Office Daily Checklist</div>
+<div class="label-row" data-set="1">
+  <div class="label" contenteditable="true" data-index="1">COFFEE</div>
+  <div class="label" contenteditable="true" data-index="2">EMAIL</div>
+  <div class="label" contenteditable="true" data-index="3">CALENDAR</div>
+  <div class="label" contenteditable="true" data-index="4">STANDUP</div>
+  <div class="label" contenteditable="true" data-index="5">SECURITY</div>
+  <div class="label" contenteditable="true" data-index="6">BACKUPS</div>
+  <div class="label" contenteditable="true" data-index="7">TASKS</div>
+  <div class="label" contenteditable="true" data-index="8">READY</div>
+</div>
+<div class="cut-guide">✂️ Cut along borders</div>
+
+<!-- SET 2: 3D Printer Specific -->
+<div class="set-title">Set 2 — 3D Print Checklist</div>
+<div class="label-row" data-set="2">
+  <div class="label" contenteditable="true" data-index="1">BED LVL</div>
+  <div class="label" contenteditable="true" data-index="2">NOZZLE</div>
+  <div class="label" contenteditable="true" data-index="3">FILAMENT</div>
+  <div class="label" contenteditable="true" data-index="4">SLICER</div>
+  <div class="label" contenteditable="true" data-index="5">GCODE</div>
+  <div class="label" contenteditable="true" data-index="6">SUPPORTS</div>
+  <div class="label" contenteditable="true" data-index="7">ADHESION</div>
+  <div class="label" contenteditable="true" data-index="8">PRINT!</div>
+</div>
+<div class="cut-guide">✂️ Cut along borders</div>
+
+<!-- SET 3: Custom -->
+<div class="set-title">Set 3 — Custom (click to edit)</div>
+<div class="label-row" data-set="3">
+  <div class="label" contenteditable="true" data-index="1">ITEM 1</div>
+  <div class="label" contenteditable="true" data-index="2">ITEM 2</div>
+  <div class="label" contenteditable="true" data-index="3">ITEM 3</div>
+  <div class="label" contenteditable="true" data-index="4">ITEM 4</div>
+  <div class="label" contenteditable="true" data-index="5">ITEM 5</div>
+  <div class="label" contenteditable="true" data-index="6">ITEM 6</div>
+  <div class="label" contenteditable="true" data-index="7">ITEM 7</div>
+  <div class="label" contenteditable="true" data-index="8">ITEM 8</div>
+</div>
+<div class="cut-guide">✂️ Cut along borders</div>
+
+<!-- SET 4: Custom -->
+<div class="set-title">Set 4 — Custom (click to edit)</div>
+<div class="label-row" data-set="4">
+  <div class="label" contenteditable="true" data-index="1">ITEM 1</div>
+  <div class="label" contenteditable="true" data-index="2">ITEM 2</div>
+  <div class="label" contenteditable="true" data-index="3">ITEM 3</div>
+  <div class="label" contenteditable="true" data-index="4">ITEM 4</div>
+  <div class="label" contenteditable="true" data-index="5">ITEM 5</div>
+  <div class="label" contenteditable="true" data-index="6">ITEM 6</div>
+  <div class="label" contenteditable="true" data-index="7">ITEM 7</div>
+  <div class="label" contenteditable="true" data-index="8">ITEM 8</div>
+</div>
+<div class="cut-guide">✂️ Cut along borders</div>
+
+<script>
+function updateToggleCount() {
+  const count = parseInt(document.getElementById('toggleCount').value);
+  const note = document.getElementById('versionNote');
+  
+  if (count === 6) {
+    note.textContent = 'V3 Compact: 145mm × 70mm box (FlashForge Adventurer 3)';
+  } else {
+    note.textContent = 'V1/V2: 171.5mm × 76.2mm box';
+  }
+  
+  // Show/hide labels 7 and 8 in all sets
+  document.querySelectorAll('.label').forEach(label => {
+    const idx = parseInt(label.getAttribute('data-index'));
+    if (idx > count) {
+      label.classList.add('hidden');
+    } else {
+      label.classList.remove('hidden');
+    }
+  });
+}
+</script>
+
+</body>
+</html>
