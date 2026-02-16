@@ -1,8 +1,8 @@
-# Office Buddy Check Box - Bill of Materials (BOM)
+# Office DeskPilot - Bill of Materials (BOM)
 
 ## Project Overview
 A toggle-switch checklist box with LED status indicators for office/desk use.  
-Inspired by the aviation "Buddy Check" concept, adapted for daily office task checklists.  
+Inspired by the aviation "DeskPilot" concept, adapted for daily office task checklists.  
 **No microcontroller needed** -- pure simple wiring (toggle > resistor > LED). USB-C for power only.
 
 **Three Versions Available:**
@@ -27,30 +27,30 @@ Inspired by the aviation "Buddy Check" concept, adapted for daily office task ch
 ### V1 -- Cut-Through Text Version
 | # | Part | File | Material | Notes |
 |---|------|------|----------|-------|
-| 1 | Bottom (toggles + engraved text on front) | `buddy_check_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
-| 2 | Lid (LED holes on top) | `buddy_check_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
-| 3 | Lid (flipped for printing) | `buddy_check_lid_print_orientation.stl` | PLA/PETG | Same lid, print-ready |
+| 1 | Bottom (toggles + engraved text on front) | `deskpilot_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
+| 2 | Lid (LED holes on top) | `deskpilot_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
+| 3 | Lid (flipped for printing) | `deskpilot_lid_print_orientation.stl` | PLA/PETG | Same lid, print-ready |
 
 ### V2 -- Label Indent Slot Version (Recommended)
 | # | Part | File | Material | Notes |
 |---|------|------|----------|-------|
-| 1 | Bottom (toggles + 18x8mm label recesses) | `buddy_check_v2_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
-| 2 | Lid (LED holes on top) | `buddy_check_v2_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
+| 1 | Bottom (toggles + 18x8mm label recesses) | `deskpilot_v2_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
+| 2 | Lid (LED holes on top) | `deskpilot_v2_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
 | 3 | Printable Label Template | `label_template.html` | Paper/Sticker | Open in browser, edit, print |
 
 ### V3 -- Compact / FlashForge Adventurer 3 (6 toggles, 145x70x35mm)
 | # | Part | File | Material | Notes |
 |---|------|------|----------|-------|
-| 1 | Bottom (6 toggles + 18x8mm label recesses) | `buddy_check_v3_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
-| 2 | Lid (6 LED holes on top) | `buddy_check_v3_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
+| 1 | Bottom (6 toggles + 18x8mm label recesses) | `deskpilot_v3_bottom.stl` | PLA/PETG | 0.2mm layer, 20% infill |
+| 2 | Lid (6 LED holes on top) | `deskpilot_v3_lid.stl` | PLA/PETG | 0.2mm layer, 30% infill |
 | 3 | Printable Label Template | `label_template.html` | Paper/Sticker | Use 6 of 8 labels |
 
 ### Design Source Files
 | File | Description |
 |------|-------------|
-| `buddy_check_box.scad` | V1 OpenSCAD source (cut-through text, 8 toggles) |
-| `buddy_check_box_v2_labels.scad` | V2 OpenSCAD source (label indent slots, 8 toggles) |
-| `buddy_check_box_v3_compact.scad` | V3 OpenSCAD source (compact, 6 toggles, Adventurer 3) |
+| `deskpilot_box.scad` | V1 OpenSCAD source (cut-through text, 8 toggles) |
+| `deskpilot_box_v2_labels.scad` | V2 OpenSCAD source (label indent slots, 8 toggles) |
+| `deskpilot_box_v3_compact.scad` | V3 OpenSCAD source (compact, 6 toggles, Adventurer 3) |
 | `generate_stl.py` | CadQuery Python STL generator (V1) |
 
 **Print Settings:**
@@ -253,13 +253,13 @@ USB-C Cable ──> USB Hub PCB Module ──> USB-A Port 1 (right side)
 ## Assembly Notes
 
 ### For V1 (cut-through text, 8 toggles):
-Print `buddy_check_bottom.stl` + `buddy_check_lid_print_orientation.stl`
+Print `deskpilot_bottom.stl` + `deskpilot_lid_print_orientation.stl`
 
 ### For V2 (label indent slots, 8 toggles):
-Print `buddy_check_v2_bottom.stl` + `buddy_check_v2_lid.stl`
+Print `deskpilot_v2_bottom.stl` + `deskpilot_v2_lid.stl`
 
 ### For V3 (compact, 6 toggles, Adventurer 3) :
-Print `buddy_check_v3_bottom.stl` + `buddy_check_v3_lid.stl`
+Print `deskpilot_v3_bottom.stl` + `deskpilot_v3_lid.stl`
 
 ### Steps (all versions):
 1. **Print** bottom box and lid (see files above for your version)
@@ -280,4 +280,4 @@ Print `buddy_check_v3_bottom.stl` + `buddy_check_v3_lid.stl`
 
 ---
 
-*Generated: 2026-02-16 | Project: Office Buddy Check Box*
+*Generated: 2026-02-16 | Project: Office DeskPilot*

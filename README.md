@@ -1,6 +1,6 @@
-# 3D Printer Buddy Check Box
+# 3D Printer DeskPilot
 
-A physical toggle-switch checklist box with LED indicators -- inspired by aviation pre-flight "Buddy Check" checklists, adapted for daily office/maker workflows.
+A physical toggle-switch checklist box with LED indicators -- inspired by aviation pre-flight "DeskPilot" checklists, adapted for daily office/maker workflows.
 
 **No microcontroller needed!** Pure simple wiring: each toggle switch directly controls an LED through a resistor. Plug in USB-C for power, flip toggles, LEDs light up. That's it.
 
@@ -26,7 +26,7 @@ A physical toggle-switch checklist box with LED indicators -- inspired by aviati
 ## Quick Start
 
 1. **Print** the bottom + lid STL files for your version
-2. **Buy** components from the [BOM](BOM_Office_Checklist_Box.md) (~$51-83)
+2. **Buy** components from the [BOM](BOM_DeskPilot.md) (~$51-83)
 3. **Wire** toggles -> resistors -> LEDs (see wiring diagram in BOM)
 4. **Print labels** using `label_template.html` and stick them in
 
@@ -35,20 +35,20 @@ A physical toggle-switch checklist box with LED indicators -- inspired by aviati
 ### STL Files (Ready to Print)
 | File | Description |
 |------|-------------|
-| `buddy_check_v3_bottom.stl` | V3 compact bottom (6 toggles, fits Adventurer 3) |
-| `buddy_check_v3_lid.stl` | V3 compact lid |
-| `buddy_check_v2_bottom.stl` | V2 full-size bottom (8 toggles) |
-| `buddy_check_v2_lid.stl` | V2 full-size lid |
+| `deskpilot_v3_bottom.stl` | V3 compact bottom (6 toggles, fits Adventurer 3) |
+| `deskpilot_v3_lid.stl` | V3 compact lid |
+| `deskpilot_v2_bottom.stl` | V2 full-size bottom (8 toggles) |
+| `deskpilot_v2_lid.stl` | V2 full-size lid |
 
 ### Source & Templates
 | File | Description |
 |------|-------------|
-| `buddy_check_box_v3_compact.scad` | V3 OpenSCAD source |
-| `buddy_check_box_v2_labels.scad` | V2 OpenSCAD source |
-| `buddy_check_box.scad` | V1 OpenSCAD source (cut-through text) |
+| `deskpilot_box_v3_compact.scad` | V3 OpenSCAD source |
+| `deskpilot_box_v2_labels.scad` | V2 OpenSCAD source |
+| `deskpilot_box.scad` | V1 OpenSCAD source (cut-through text) |
 | `generate_stl.py` | CadQuery Python STL generator |
 | `label_template.html` | Printable label template (editable, 6/8 toggle selector) |
-| `BOM_Office_Checklist_Box.md` | Full Bill of Materials with wiring diagram |
+| `BOM_DeskPilot.md` | Full Bill of Materials with wiring diagram |
 
 ## Wiring
 

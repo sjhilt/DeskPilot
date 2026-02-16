@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-3D Printer Buddy Check Box - CadQuery STL Generator
+3D Printer DeskPilot - CadQuery STL Generator
 Toggle switches on the FRONT face, LEDs on the top, labels on top.
 Text labels CUT THROUGH the lid so they glow when LEDs are on.
-Inspired by aviation BuddyCheck boxes.
+Inspired by aviation DeskPilot boxes.
 Dimensions: 6.75" x 3" x 1.5" (171.45mm x 76.2mm x 38.1mm)
 """
 
@@ -82,7 +82,7 @@ VENT_L = 30.0
 NUM_VENTS = 5
 VENT_SPACING = 8.0
 
-OUTPUT_DIR = "/Users/stephenhi/Desktop/3DPrinterBuddyCheck"
+OUTPUT_DIR = "/Users/stephenhi/Desktop/3DPrinterDeskPilot"
 
 # ============================================================
 # BOTTOM ENCLOSURE
@@ -276,24 +276,24 @@ def main():
 
     # Generate bottom
     bottom = make_bottom()
-    bottom_path = os.path.join(OUTPUT_DIR, "buddy_check_bottom.stl")
+    bottom_path = os.path.join(OUTPUT_DIR, "deskpilot_bottom.stl")
     cq.exporters.export(bottom, bottom_path)
     print(f"  Saved: {bottom_path}")
 
     # Generate lid with text
     lid = make_lid()
-    lid_path = os.path.join(OUTPUT_DIR, "buddy_check_lid.stl")
+    lid_path = os.path.join(OUTPUT_DIR, "deskpilot_lid.stl")
     cq.exporters.export(lid, lid_path)
     print(f"  Saved: {lid_path}")
 
     # Lid flipped for printing
     lid_flipped = lid.mirror("XY", basePointVector=(0, 0, LID_T/2))
-    lid_print_path = os.path.join(OUTPUT_DIR, "buddy_check_lid_print_orientation.stl")
+    lid_print_path = os.path.join(OUTPUT_DIR, "deskpilot_lid_print_orientation.stl")
     cq.exporters.export(lid_flipped, lid_print_path)
     print(f"  Saved: {lid_print_path}")
 
     print(f"\n{'='*60}")
-    print(f"3D PRINTER BUDDY CHECK BOX - STL Generation Complete!")
+    print(f"DESKPILOT - STL Generation Complete!")
     print(f"{'='*60}")
     print(f"  Box: {BOX_L:.1f} x {BOX_W:.1f} x {BOX_H:.1f} mm")
     print(f"       ({BOX_L/25.4:.2f}\" x {BOX_W/25.4:.2f}\" x {BOX_H/25.4:.2f}\")")
