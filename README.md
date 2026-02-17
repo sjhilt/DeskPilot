@@ -8,6 +8,10 @@ A physical toggle-switch checklist box with LED indicators -- inspired by aviati
 
 ![DeskPilot Preview](deskpilot_preview.jpg)
 
+*OpenSCAD render:*
+
+![DeskPilot CAD Render](deskpilot_render.png)
+
 ## Three Versions
 
 | Version | Dimensions | Toggles | Labels | Min Build Plate |
