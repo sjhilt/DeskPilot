@@ -6,6 +6,8 @@ A physical toggle-switch checklist box with LED indicators -- inspired by aviati
 
 ![Concept](https://img.shields.io/badge/Status-Ready_to_Print-brightgreen) ![License](https://img.shields.io/badge/License-MIT-blue)
 
+![DeskPilot Preview](deskpilot_preview.jpg)
+
 ## Three Versions
 
 | Version | Dimensions | Toggles | Labels | Min Build Plate |
